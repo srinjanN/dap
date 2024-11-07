@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Book Appointment</h1>
+    <form method="POST">
+        <label>Doctor's Name</label>
+        <input type="text" name="doctor_name" required>
+        <label>Appointment Date</label>
+        <input type="date" name="appointment_date" required>
+        <button type="submit">Book</button>
+    </form>
+{% endblock %}

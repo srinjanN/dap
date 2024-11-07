@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Welcome to the Doctor's Appointment System</h1>
+    {% if session.get('patient_name') %}
+        <p>Hello, {{ session['patient_name'] }}!</p>
+    {% else %}
+        <p>Please register or log in to book an appointment.</p>
+    {% endif %}
+{% endblock %}
